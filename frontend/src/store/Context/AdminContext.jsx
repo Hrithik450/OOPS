@@ -49,7 +49,7 @@ function AdminProvider({ children }) {
   const handleNewProduct = async (data) => {
     try {
       const response = await axios.post(
-        "http://localhost:7000/admin/createBook",
+        "https://ecommerce-project-backend-fu6b.onrender.com/admin/createBook",
         data,
         {
           withCredentials: true,
@@ -73,7 +73,7 @@ function AdminProvider({ children }) {
   const handleUpdateProduct = async (data) => {
     try {
       const response = await axios.post(
-        "http://localhost:7000/admin/updateBook",
+        "https://ecommerce-project-backend-fu6b.onrender.com/admin/updateBook",
         data,
         { withCredentials: true }
       );
@@ -97,7 +97,7 @@ function AdminProvider({ children }) {
   const getUsers = async () => {
     try {
       const response = await axios.get(
-        "http://localhost:7000/admin/getAllUsers",
+        "https://ecommerce-project-backend-fu6b.onrender.com/admin/getAllUsers",
         {
           withCredentials: true,
         }
@@ -121,7 +121,7 @@ function AdminProvider({ children }) {
   const handleDeleteProduct = async (data) => {
     try {
       const response = await axios.post(
-        "http://localhost:7000/admin/deleteBook",
+        "https://ecommerce-project-backend-fu6b.onrender.com/admin/deleteBook",
         data,
         {
           withCredentials: true,
@@ -145,7 +145,7 @@ function AdminProvider({ children }) {
   const handleDeleteUser = async (data) => {
     try {
       const response = await axios.post(
-        "http://localhost:7000/admin/DeleteUser",
+        "https://ecommerce-project-backend-fu6b.onrender.com/admin/DeleteUser",
         data,
         {
           withCredentials: true,
