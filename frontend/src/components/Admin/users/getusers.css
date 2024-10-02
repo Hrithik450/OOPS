@@ -1,0 +1,11 @@
+.get-users {
+  width: 50%;
+  margin-inline: auto;
+  border-radius: 10px;
+}
+
+@media (max-width: 450px) {
+  .get-users {
+    width: 100%;
+  }
+}

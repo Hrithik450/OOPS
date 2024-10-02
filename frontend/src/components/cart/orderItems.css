@@ -1,0 +1,28 @@
+.conatiner .left {
+  margin-left: 25px;
+}
+
+.conatiner .right {
+  margin-left: 25px;
+}
+
+.conatiner .left img {
+  width: 70%;
+  height: 70%;
+}
+
+@media (max-width: 450px) {
+  .conatiner .left {
+    margin-left: 3px;
+  }
+  .conatiner .right {
+    margin-left: 10px;
+  }
+  .conatiner .left img {
+    width: 60%;
+    height: 60%;
+  }
+  .productcard {
+    padding-block: 10px;
+  }
+}

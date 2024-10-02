@@ -1,0 +1,21 @@
+.user_container > * {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  padding-bottom: 5px;
+}
+
+.user_container {
+  padding: 10px;
+  margin-block: 20px;
+  box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+}
+
+@media (max-width: 450px) {
+  .user_container {
+    width: 100%;
+  }
+  .user_container > * {
+    grid-template-columns: 1fr 2fr;
+  }
+}

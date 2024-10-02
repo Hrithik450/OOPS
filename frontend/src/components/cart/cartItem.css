@@ -1,0 +1,133 @@
+.productcard {
+  border-block: 2px solid rgba(0, 0, 0, 0.08);
+  height: auto;
+  padding-top: 0.8rem;
+  width: 100%;
+  background-color: white;
+}
+
+.conatiner {
+  display: flex;
+  height: 75%;
+}
+
+.productcard .left {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  justify-content: baseline;
+  align-items: center;
+}
+
+.productcard .left .quantity {
+  margin-top: 0.8rem;
+  display: flex;
+  column-gap: 5px;
+}
+
+.productcard .left .quantity .Qty {
+  text-align: center;
+  border: 1px solid rgba(0, 0, 0, 0.4);
+  border-radius: 5px;
+  width: 7vw;
+}
+
+.productcard .left .quantity span {
+  cursor: pointer;
+  text-align: center;
+  padding-bottom: 2px;
+  border-radius: 50%;
+  width: 5vw;
+  border: 1px solid rgba(0, 0, 0, 0.4);
+}
+
+.productcard .left .imageClass {
+  width: 20vw;
+  height: 15vh;
+  margin-left: 10px;
+}
+
+.productcard .right .Carttitle {
+  margin-left: 8px;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.productcard .right .brand {
+  margin-left: 8px;
+  font-size: 12px;
+}
+
+.productcard .right .rating .stars {
+  margin-right: 5px;
+}
+
+.shippingInfo {
+  font-size: 15px;
+  font-weight: 400;
+  color: black;
+  padding-left: 20px;
+  margin-bottom: 8px;
+}
+
+.Delivery-info {
+  margin-left: 13px;
+  font-size: 10px;
+}
+
+.bottom-menu {
+  width: 100%;
+  height: 6vh;
+  display: flex;
+  border: 2px solid rgba(0, 0, 0, 0.08);
+}
+
+.bottom-menu > * {
+  flex-basis: 100%;
+  height: 100%;
+  display: flex;
+  column-gap: 5px;
+  justify-content: center;
+  align-items: center;
+  border-left: 2px solid rgba(0, 0, 0, 0.08);
+}
+/* 
+@media (min-width: 768px) {
+  .bottom-menu {
+    width: 49%;
+  }
+  .productcard {
+    height: 50vh;
+  }
+  .productcard .right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+  }
+  .productcard .left .quantity span {
+    width: 2vw;
+  }
+  .productcard .left .imageClass {
+    height: 80%;
+  }
+  .productcard .left {
+    width: 20%;
+  }
+} */
+@media (min-width: 768px) {
+  .productcard .left .imageClass {
+    width: 10vw;
+    height: 20vh;
+    margin-bottom: 10px;
+  }
+  .productcard .left .quantity span {
+    width: 2vw;
+  }
+  .conatiner {
+    width: 100%;
+  }
+  .bottom-menu {
+    width: 100%;
+  }
+}

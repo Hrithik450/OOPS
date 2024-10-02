@@ -1,0 +1,108 @@
+.Card_Container {
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0px 0px 5px 2px rgba(0, 0, 0, 0.4);
+  background-color: white;
+}
+
+.card_container2 {
+  position: relative;
+  height: 100%;
+  border-radius: 10px;
+  transform-style: preserve-3d;
+  padding-bottom: 30px;
+}
+
+.back {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  height: 100%;
+  background-color: #3a3a3a;
+  color: rgb(211, 211, 211);
+  border-radius: 10px;
+  backface-visibility: hidden;
+  transform: rotateY(180deg);
+  z-index: 3;
+}
+
+.ProductCard {
+  position: relative;
+  border-radius: 10px;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  overflow: hidden;
+  text-decoration: none;
+  background-color: white;
+  backface-visibility: hidden;
+}
+
+.ProductCard img {
+  margin-bottom: 10px;
+}
+
+.ProductCard .rating {
+  margin-left: 5px;
+  display: flex;
+  column-gap: 4px;
+}
+
+.Active {
+  transform: rotateY(180deg);
+  transition: transform 1500ms;
+}
+
+.ProductCard .rating span {
+  align-self: center;
+  padding-left: 2px;
+}
+
+.ProductCard .Title {
+  margin-left: 7px;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+.ProductCard .price {
+  margin-left: 8px;
+  margin-bottom: 15px;
+  font-size: 17px;
+  color: orange;
+}
+
+.Author {
+  margin-left: 10px;
+  display: flex;
+  column-gap: 8px;
+}
+
+.book-button {
+  position: fixed;
+  bottom: 0;
+  font-weight: 700;
+  opacity: 0.9;
+  background-color: rgb(231, 231, 29);
+  color: black;
+}
+
+.book-button:hover {
+  background-color: rgba(231, 231, 29, 0.9);
+}
+
+@media (max-width: 450px) {
+  .ProductCard .rating span {
+    font-size: 10px;
+  }
+  .ProductCard .price {
+    font-size: 14px;
+  }
+  .Author {
+    margin-left: 10px;
+    display: flex;
+    flex-direction: column;
+    column-gap: 5px;
+  }
+}

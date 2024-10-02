@@ -1,0 +1,115 @@
+/* Navbar.css */
+.navbar {
+  width: 95vw;
+  margin-inline: auto;
+  background-color: white;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.navbar-left {
+  display: flex;
+  align-items: center;
+}
+
+.menu-icon {
+  font-size: 24px;
+  cursor: pointer;
+  margin-right: 15px;
+}
+
+.logo img {
+  height: 25px;
+}
+
+.navbar-middle {
+  grid-row-start: 2;
+  grid-column-start: span 2;
+}
+
+.explore {
+  font-size: 12px;
+  color: gray;
+  margin-left: 5px;
+}
+
+.plus {
+  color: #2874f0;
+  font-weight: bold;
+}
+
+.star {
+  color: #fdb900;
+  font-weight: bold;
+}
+
+.navbar-right {
+  display: flex;
+  align-items: center;
+  margin-right: 8px;
+  column-gap: 7px;
+}
+
+.navbar-right > * {
+  flex-grow: 1;
+  column-gap: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.icon {
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.cart-icon {
+  position: relative;
+  display: flex;
+  align-items: center;
+  column-gap: 7px;
+}
+
+.cart-badge {
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  background-color: red;
+  color: white;
+  border-radius: 50%;
+  padding: 3px 6px;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.visible {
+  display: none;
+}
+
+@media (max-width: 450px) {
+  .visibility {
+    display: none;
+  }
+}
+
+@media (min-width: 1024px) {
+  .navbar {
+    height: 8vh;
+    grid-template-columns: 1fr 2fr 2fr;
+  }
+  .visible {
+    display: block;
+  }
+  .navbar-middle {
+    grid-row-start: 1;
+    grid-column-start: 2;
+    width: 100%;
+  }
+  .menu-icon {
+    display: none;
+  }
+
+  .navbar-left {
+    justify-self: center;
+  }
+}

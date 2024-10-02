@@ -1,0 +1,86 @@
+.shippingForm > * {
+  display: flex;
+  position: relative;
+}
+
+.shippingForm {
+  max-width: 100vw;
+  max-height: 90vh;
+}
+
+.Shipping-Container {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 100vw;
+  max-height: 90vh;
+}
+
+.shippingBox {
+  width: 85vw;
+  height: auto;
+  padding: 15px;
+  border-radius: 20px;
+  box-shadow: 0px 0px 10px 4px rgba(0, 0, 0, 0.1);
+  max-width: 100vw;
+  max-height: 90vh;
+  background-color: white;
+}
+
+.Icons {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 6%;
+}
+
+.shippingForm input,
+.shippingForm div select {
+  padding-left: 50px;
+  margin-block: 5%;
+  border-radius: 50px;
+}
+
+.shippingForm button {
+  border-radius: 50px;
+  display: flex;
+  justify-content: center;
+  font-weight: 700;
+  width: 100%;
+  margin-top: 10px;
+  background-color: orange;
+}
+
+.shippingForm div select {
+  height: 100%;
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+@media (min-width: 768px) {
+  .shippingBox {
+    width: 60vw;
+  }
+  .shippingForm input,
+  .shippingForm div select {
+    margin-block: 4%;
+  }
+}
+
+@media (min-width: 1025px) {
+  .Icons {
+    left: 5%;
+  }
+  .shippingForm input,
+  .shippingForm div select {
+    margin-block: 3%;
+  }
+  .shippingBox {
+    width: 30vw;
+  }
+}

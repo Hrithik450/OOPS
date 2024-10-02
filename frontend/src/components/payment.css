@@ -1,0 +1,21 @@
+.Details {
+  font-weight: 700;
+  margin-block: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Details span {
+  color: orangered;
+}
+
+.flex {
+  display: flex;
+}
+
+@media (max-width: 450px) {
+  .flex {
+    flex-direction: column;
+  }
+}
