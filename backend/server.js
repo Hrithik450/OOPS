@@ -8,16 +8,6 @@ const cookieParser = require("cookie-parser");
 const { connectDB } = require("./connection");
 const path = require("path");
 
-// uncaught error
-process.on("uncaughtException", (err) => {
-  console.log(`Server error ${err.message}`);
-  console.log("Shutting down the server due to uncaught error");
-
-  server.close(() => {
-    process.exit(1);
-  });
-});
-
 //routes
 const PostRouter = require("./routes/user");
 const AuthRouter = require("./routes/oauth");
@@ -60,6 +50,15 @@ const server = app.listen(PORT, () => console.log(`server started at ${PORT}`));
 process.on("unhandledRejection", (err) => {
   console.log(`Server error ${err.message}`);
   console.log("Server is on maintainance");
+
+  server.close(() => {
+    process.exit(1);
+  });
+});
+
+process.on("uncaughtException", (err) => {
+  console.log(`Server error ${err.message}`);
+  console.log("Shutting down the server due to uncaught error");
 
   server.close(() => {
     process.exit(1);
