@@ -51,7 +51,7 @@ function ProductProvider({ children }) {
     });
 
     const response = await axios.get(
-      "http://localhost:7000/product/getproducts"
+      "https://ecommerce-project-backend-fu6b.onrender.com/product/getproducts"
     );
 
     if (response.status === 200) {
@@ -65,7 +65,7 @@ function ProductProvider({ children }) {
   const handleDownload = async (id) => {
     try {
       const response = await axios
-        .get(`http://localhost:7000/product/download/${id}`, {
+        .get(`https://ecommerce-project-backend-fu6b.onrender.com/product/download/${id}`, {
           responseType: "blob",
           withCredentials: true,
         })
@@ -82,7 +82,7 @@ function ProductProvider({ children }) {
   const features = async () => {
     try {
       const response = await axios.get(
-        "http://localhost:7000/product/api/featureproducts",
+        "https://ecommerce-project-backend-fu6b.onrender.com/product/api/featureproducts",
         {
           withCredentials: true,
         }
