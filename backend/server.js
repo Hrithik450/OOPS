@@ -29,7 +29,7 @@ const ErrorMiddleware = require("./middlewares/ErrorHandling");
 
 const app = express();
 const PORT = process.env.PORT || 7000;
-connectDB("mongodb://127.0.0.1:27017/backend ");
+connectDB(process.env.MONGOURL);
 
 const corsOptions = {
   origin: "http://localhost:5173",
