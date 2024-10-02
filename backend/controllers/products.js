@@ -69,7 +69,6 @@ const Pdfpath = CatchAsyncError(async (req, res, next) => {
 });
 
 const feature = CatchAsyncError(async (req, res, next) => {
-  console.log("yess");
   const products = await book.find({ trending: true });
 
   if (!products) return next(new ErrorHandler("Currently No Books", 404));
