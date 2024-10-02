@@ -155,7 +155,7 @@ function CartProvider({ children }) {
     console.log(id);
 
     try {
-      const response = await axios.get(`http://localhost:7000/product/${id}`, {
+      const response = await axios.get(`https://ecommerce-project-backend-fu6b.onrender.com/product/${id}`, {
         withCredentials: true,
       });
       if (response.status === 200) {
@@ -214,7 +214,7 @@ function CartProvider({ children }) {
   const HandleRatingBackend = async (id, username, email, value) => {
     try {
       const response = await axios.post(
-        `http://localhost:7000/product/review/${id}`,
+        `https://ecommerce-project-backend-fu6b.onrender.com/product/review/${id}`,
         { username, email, value },
         {
           withCredentials: true,
@@ -241,7 +241,7 @@ function CartProvider({ children }) {
   const LoadPaymentDetails = async (id) => {
     try {
       const response = await axios.get(
-        `http://localhost:7000/checkout/payment/${id}`,
+        `https://ecommerce-project-backend-fu6b.onrender.com/checkout/payment/${id}`,
         {
           withCredentials: true,
         }
