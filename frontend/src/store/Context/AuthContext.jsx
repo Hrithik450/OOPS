@@ -70,7 +70,7 @@ function AuthProvider({ children }) {
     });
 
     try {
-      const response = await axios.post("http://localhost:7000/signup", data, {
+      const response = await axios.post("https://ecommerce-project-backend-fu6b.onrender.com/signup", data, {
         withCredentials: true,
       });
       if (response.status === 200) {
@@ -90,7 +90,7 @@ function AuthProvider({ children }) {
 
   const loadUser = async () => {
     try {
-      const response = await axios.get("http://localhost:7000/me", {
+      const response = await axios.get("https://ecommerce-project-backend-fu6b.onrender.com/me", {
         withCredentials: true,
       });
 
@@ -110,7 +110,7 @@ function AuthProvider({ children }) {
 
   const LoadUser = async () => {
     try {
-      const response = await axios.get("http://localhost:7000/refresh", {
+      const response = await axios.get("https://ecommerce-project-backend-fu6b.onrender.com/refresh", {
         withCredentials: true,
       });
 
@@ -135,7 +135,7 @@ function AuthProvider({ children }) {
     });
 
     try {
-      const response = await axios.post("http://localhost:7000/login", data, {
+      const response = await axios.post("https://ecommerce-project-backend-fu6b.onrender.com/login", data, {
         withCredentials: true,
       });
 
@@ -156,7 +156,7 @@ function AuthProvider({ children }) {
 
   const handleLogout = async () => {
     try {
-      const response = await axios.get("http://localhost:7000/logout", {
+      const response = await axios.get("https://ecommerce-project-backend-fu6b.onrender.com/logout", {
         withCredentials: true,
       });
       if (response.status === 200) {
